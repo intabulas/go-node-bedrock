@@ -1,4 +1,6 @@
-# A Docker file with Go, Dep, Vgo and Node (with npm and yarn)
+# A Docker file with Go, Dep and Node (with npm and yarn)
+
+NOTE: I dropped vgo from this build as experimental support was merged into go1.11
 
 NOTE: This is a fork of my https://hub.docker.com/r/intabulas/go-node-glide image. Since I no longer use glide I wanted to transition to a new image
 
@@ -6,9 +8,8 @@ This is a base image that has the things I need to do backend and frontend devel
 
 Included:
 
-- [Golang 1.10.3](https://golang.org/)
-- [NodeJS 10.7.0](https://nodejs.org/en/) - includes NPM 6.1.0
-- [Yarn 1.9.2](https://yarnpkg.com/)
+- [Golang 1.11](https://golang.org/)
+- [NodeJS 10.9.0](https://nodejs.org/en/) - includes NPM 6.2.0
+- [Yarn 1.9.4](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
-- [Vgo latest](https://github.com/golang/vgo)
-- [GoReleaser 0.77.1](https://goreleaser.com/)
+- [GoReleaser latest](https://goreleaser.com/)
