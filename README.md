@@ -9,7 +9,7 @@ This is a base image that has the things I need to do backend and frontend devel
 Included:
 
 - [Golang 1.11](https://golang.org/)
-- [NodeJS 10.9.0](https://nodejs.org/en/) - includes NPM 6.2.0
+- [NodeJS 10.10.0](https://nodejs.org/en/) - includes NPM 6.4.1
 - [Yarn 1.9.4](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
 - [GoReleaser latest](https://goreleaser.com/)
