@@ -10,6 +10,6 @@ Included:
 
 - [Golang 1.11](https://golang.org/)
 - [NodeJS 10.11.0](https://nodejs.org/en/) - includes NPM 6.4.1
-- [Yarn 1.9.4](https://yarnpkg.com/)
+- [Yarn 1.10.1](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
 - [GoReleaser latest](https://goreleaser.com/)
