@@ -1,4 +1,4 @@
-FROM golang:1.11.1
+FROM golang:1.11.2
 
 LABEL maintainer="mlussier@gmail.com"
 
@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # ENV for Node and NPM
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 11.0.0
+ENV NODE_VERSION 11.1.0
 
 #
 # gcc for cgo
@@ -76,13 +76,3 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   # YARN Package Manager
   #
   && npm install yarn prettier -g
-
-#
-# Install GoReleaser see: https://goreleaser.com/
-#
-RUN go get -d github.com/goreleaser/goreleaser \
-  && cd $GOPATH/src/github.com/goreleaser/goreleaser \
-  && dep ensure -vendor-only \
-  && make setup build \
-  && go install
-
