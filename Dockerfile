@@ -68,7 +68,11 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 #
 # Install dep (latest)
 #
-RUN go get -u github.com/golang/dep/cmd/go get -u github.com/gobuffalo/packr/packr \
+RUN go get -u github.com/golang/dep/cmd/dep \
+  #
+  # packr
+  #
+  && go get -u github.com/gobuffalo/packr/packr \
   #
   # NPM Settings and global dependencies
   #
