@@ -1,5 +1,6 @@
 FROM golang:1.11.4
 
+LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
 
 # Env for apt-get
