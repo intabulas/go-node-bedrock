@@ -9,7 +9,7 @@ NOTE: This is a fork of my https://hub.docker.com/r/intabulas/go-node-glide imag
 Included:
 
 - [Golang 1.12.3](https://golang.org/)
-- [NodeJS 11.13.0](https://nodejs.org/en/) - includes NPM 6.7.0
+- [NodeJS 11.14.0](https://nodejs.org/en/) - includes NPM 6.7.0
 - [Yarn 1.15.2](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
 - [Packr latest 1.x](https://github.com/gobuffalo/packr)
