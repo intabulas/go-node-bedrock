@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # ENV for Node and NPM
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 12.2.0
+ENV NODE_VERSION 12.3.1
 
 #
 # gcc for cgo
