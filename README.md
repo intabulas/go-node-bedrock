@@ -2,12 +2,12 @@
 
 This is a base image that has the things I need to do backend and frontend development in golang and node. It also includes dep for legacy golang dependency management
 
-**UPDATE** Since I was tired of two docker files just for librdkafka, it has been added to this image
+**UPDATE** I also use the official confluent go lib, which requires librdkafka. This image now has librdkafka installed for building
 
 Included:
 
 - [Golang 1.12.6](https://golang.org/)
-- [NodeJS 12.4.0](https://nodejs.org/en/) - includes NPM 6.9.0
+- [NodeJS 12.5.0](https://nodejs.org/en/) - includes NPM 6.9.0
 - [Yarn 1.16.0](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
 - [Packr latest 1.x](https://github.com/gobuffalo/packr)
