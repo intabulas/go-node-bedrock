@@ -39,11 +39,11 @@ RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
 
 #
 # NodeJS
-# Origionaly taken from https://github.com/nodejs/docker-node/blob/master/11/alpine/Dockerfile
+# Origionaly taken from https://github.com/nodejs/docker-node/blob/master/12/alpine/Dockerfile
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 12.6.0
+ENV NODE_VERSION 12.7.0
 
 RUN set -ex \
   && for key in \
