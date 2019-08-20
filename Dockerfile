@@ -18,6 +18,7 @@ RUN apt-get update \
   make \
   pkg-config \
   xz-utils\
+  tree \
   software-properties-common \
   apt-transport-https \
   netcat \
@@ -43,7 +44,7 @@ RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 12.8.0
+ENV NODE_VERSION 12.8.1
 
 RUN set -ex \
   && for key in \
