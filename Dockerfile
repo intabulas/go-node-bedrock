@@ -22,6 +22,8 @@ RUN apt-get update \
   software-properties-common \
   apt-transport-https \
   netcat \
+  git \
+  rpm \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -85,7 +87,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 #
-# Install dep (latest)
+# Install Golang deps
 #
 RUN go get -u github.com/golang/dep/cmd/dep \
   #
@@ -93,9 +95,14 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   #
   && go get -u github.com/gobuffalo/packr/packr \
   #
-  # NPM Settings and global dependencies
+  # NFPM
   #
-  && /usr/local/bin/npm set progress=false \
+  && go get -u github.com/goreleaser/nfpm/...
+
+#
+# Install Node deps
+#
+RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
   # YARN Package Manager
