@@ -100,7 +100,7 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   && go get -u github.com/goreleaser/nfpm/...
 
 #
-# Install Node deps
+# Install Node deps and settings
 #
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
