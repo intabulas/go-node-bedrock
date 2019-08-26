@@ -32,13 +32,13 @@ RUN apt-get update \
 # librdkafka
 #
 
-# libssl 1.0.0 dep
-RUN wget http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u11_amd64.deb \
-  && dpkg --install libssl1.0.0_1.0.1t-1+deb8u11_amd64.deb
+# # libssl 1.0.0 dep
+# RUN wget http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u11_amd64.deb \
+#   && dpkg --install libssl1.0.0_1.0.1t-1+deb8u11_amd64.deb
 
-RUN wget -qO - https://packages.confluent.io/deb/5.2/archive.key | apt-key add -
-RUN add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/5.2 stable main"
-RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
+# RUN wget -qO - https://packages.confluent.io/deb/5.2/archive.key | apt-key add -
+# RUN add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/5.2 stable main"
+# RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
 
 #
 # NodeJS
