@@ -93,7 +93,7 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   #
   # packr
   #
-  && go get -u github.com/gobuffalo/packr/packr \
+  && go get -u github.com/gobuffalo/packr/packr/v2 \
   #
   # NFPM
   #
