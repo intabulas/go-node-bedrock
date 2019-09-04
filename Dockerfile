@@ -49,7 +49,7 @@ RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 12.8.1
+ENV NODE_VERSION 12.10.0
 
 RUN set -ex \
   && for key in \
