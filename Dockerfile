@@ -1,4 +1,4 @@
-FROM golang:1.13.0
+FROM golang:1.13.1
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -49,7 +49,7 @@ RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 12.10.0
+ENV NODE_VERSION 12.11.0
 
 RUN set -ex \
   && for key in \
