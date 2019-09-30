@@ -16,6 +16,7 @@ RUN apt-get update \
   g++ \
   gcc \
   libc6-dev \
+  libpcre++-dev \
   make \
   pkg-config \
   xz-utils\
