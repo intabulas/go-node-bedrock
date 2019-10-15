@@ -14,3 +14,4 @@ Included:
 - [librdkafka 1.0.0](https://github.com/edenhill/librdkafka)
 - [GolangCI Lint 1.20.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.1.0](https://github.com/securego/gosec)
+- [librdkafka 1.2.1](https://github.com/edenhill/librdkafka)

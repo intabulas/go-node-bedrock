@@ -14,13 +14,17 @@ RUN apt-get update \
   && apt-get upgrade -y \
   && apt-get install -y --no-install-recommends \
   g++ \
+  wget \
   gcc \
   libc6-dev \
   libpcre++-dev \
+  libsasl2-dev \
   make \
   pkg-config \
   xz-utils\
   tree \
+  libssl-dev \
+  libzstd-dev \
   software-properties-common \
   apt-transport-https \
   netcat \
@@ -35,14 +39,13 @@ RUN apt-get update \
 # librdkafka
 #
 
+RUN wget https://github.com/edenhill/librdkafka/archive/v1.2.1.tar.gz \
+  && tar -xvf v1.2.1.tar.gz  \
+  && cd librdkafka-1.2.1 \
+  && ./configure --install-deps \
+  && make \
+  && make install
 
-# # libssl 1.0.0 dep
-RUN wget http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u11_amd64.deb \
-  && dpkg --install libssl1.0.0_1.0.1t-1+deb8u11_amd64.deb
-
-RUN wget -qO - https://packages.confluent.io/deb/5.2/archive.key | apt-key add -
-RUN add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/5.2 stable main"
-RUN apt-get update && apt-get install -y librdkafka1 librdkafka-dev
 
 #
 # NodeJS
