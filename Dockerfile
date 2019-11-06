@@ -1,4 +1,4 @@
-FROM golang:1.13.1
+FROM golang:1.13.4
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -53,7 +53,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v1.2.1.tar.gz \
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 12.11.1
+ENV NODE_VERSION 13.1.0
 
 RUN set -ex \
   && for key in \
@@ -101,6 +101,10 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   # packr
   #
   && go get -u github.com/gobuffalo/packr/v2/packr2 \
+  #
+  # Swag CLI
+  #
+  && go get -u github.com/swaggo/swag/cmd/swag \
   #
   # NFPM
   #
