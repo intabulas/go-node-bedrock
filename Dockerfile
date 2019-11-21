@@ -38,10 +38,10 @@ RUN apt-get update \
 #
 # librdkafka
 #
-
-RUN wget https://github.com/edenhill/librdkafka/archive/v1.2.1.tar.gz \
-  && tar -xvf v1.2.1.tar.gz  \
-  && cd librdkafka-1.2.1 \
+ENV LIBRDKAFKA_VERSION 1.2.2
+RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
+  && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
+  && cd librdkafka-$LIBRDKAFKA_VERSION \
   && ./configure --install-deps \
   && make \
   && make install
@@ -93,6 +93,11 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && apt-get purge -y --auto-remove $buildDeps \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
+ENV NFPM_VERSION 1.1.6
+
+RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v1.1.6/nfpm_1.1.6_Linux_x86_64.tar.gz" \
+  && tar -xzvf "nfpm_1.1.6_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
+
 #
 # Install Golang deps
 #
@@ -104,11 +109,11 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   #
   # Swag CLI
   #
-  && go get -u github.com/swaggo/swag/cmd/swag \
-  #
-  # NFPM
-  #
-  && go get -u github.com/goreleaser/nfpm/...
+  && go get -u github.com/swaggo/swag/cmd/swag
+#
+# NFPM
+#
+#&& go get -u github.com/goreleaser/nfpm/...
 
 #
 # GolangCI Lint v1.20.0
