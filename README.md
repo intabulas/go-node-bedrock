@@ -8,7 +8,7 @@ Included:
 
 - [Golang 1.13.4](https://golang.org/)
 - [NodeJS 13.1.0](https://nodejs.org/en/) - includes NPM 6.12.1
-- [Yarn 1.19.1](https://yarnpkg.com/)
+- [Yarn 1.19.2](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
 - [Packr v2.x](https://github.com/gobuffalo/packr)
 - [GolangCI Lint 1.20.0](https://github.com/golangci/golangci-lint)
