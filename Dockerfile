@@ -1,4 +1,4 @@
-FROM golang:1.13.4
+FROM golang:1.13.5
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -53,7 +53,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 13.2.0
+ENV NODE_VERSION 13.3.0
 
 RUN set -ex \
   && for key in \
