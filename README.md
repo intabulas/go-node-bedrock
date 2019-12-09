@@ -13,6 +13,6 @@ Included:
 - [Packr v2.x](https://github.com/gobuffalo/packr)
 - [GolangCI Lint 1.20.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.1.0](https://github.com/securego/gosec)
-- [librdkafka 1.2.2](https://github.com/edenhill/librdkafka)
+- [librdkafka 1.3.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI latest](https://github.com/swaggo/swag)
 - [NFPM 1.1.6](https://github.com/goreleaser/nfpm)
