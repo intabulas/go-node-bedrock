@@ -95,7 +95,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 
 ENV NFPM_VERSION 1.1.8
 
-RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v1.1.6/nfpm_1.1.8_Linux_x86_64.tar.gz" \
+RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v1.1.8/nfpm_1.1.8_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_1.1.8_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
 
 #
