@@ -118,7 +118,7 @@ RUN go get -u github.com/golang/dep/cmd/dep \
 #
 # GolangCI Lint v1.20.0
 #
-RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v1.21.0 \
+RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v1.22.0 \
   #
   # Gosec 2.1.0  -  https://github.com/securego/gosec
   #
