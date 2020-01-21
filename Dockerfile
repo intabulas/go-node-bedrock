@@ -116,9 +116,9 @@ RUN go get -u github.com/golang/dep/cmd/dep \
 #&& go get -u github.com/goreleaser/nfpm/...
 
 #
-# GolangCI Lint v1.20.0
+# GolangCI Lint v1.23.1
 #
-RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v1.22.2 \
+RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v1.23.1 \
   #
   # Gosec 2.1.0  -  https://github.com/securego/gosec
   #
