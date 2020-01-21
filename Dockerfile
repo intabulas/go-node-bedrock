@@ -105,11 +105,15 @@ RUN go get -u github.com/golang/dep/cmd/dep \
   #
   # packr
   #
-  && go get -u github.com/gobuffalo/packr/v2/packr2 \
-  #
-  # Swag CLI
-  #
-  && go get -u github.com/swaggo/swag/cmd/swag
+  && go get -u github.com/gobuffalo/packr/v2/packr2
+
+ENV GO111MODULE on
+
+#
+# Swag CLI
+#
+RUN go get -u github.com/swaggo/swag/cmd/swag
+
 #
 # NFPM
 #
