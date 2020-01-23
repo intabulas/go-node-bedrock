@@ -49,7 +49,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 
 #
 # NodeJS
-# Origionaly taken from https://github.com/nodejs/docker-node/blob/master/12/alpine/Dockerfile
+# Kept up to date from https://github.com/nodejs/docker-node/blob/master/13/alpine3.11/Dockerfile
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
