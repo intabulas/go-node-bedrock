@@ -6,7 +6,6 @@ LABEL maintainer="mlussier@gmail.com"
 # Env for apt-get
 ENV DEBIAN_FRONTEND noninteractive
 
-
 #
 # gcc for cgo
 #
@@ -54,7 +53,6 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 13.7.0
-
 RUN set -ex \
   && for key in \
   94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
@@ -93,10 +91,9 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && apt-get purge -y --auto-remove $buildDeps \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
-ENV NFPM_VERSION 1.1.8
-
-RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v1.1.10/nfpm_1.1.10_Linux_x86_64.tar.gz" \
-  && tar -xzvf "nfpm_1.1.10_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
+ENV NFPM_VERSION 1.1.10
+RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
+  && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
 
 #
 # Install Golang deps
@@ -120,13 +117,12 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 #&& go get -u github.com/goreleaser/nfpm/...
 
 #
-# GolangCI Lint v1.23.1
+# GolangCI Lint  and GoSec
 #
-RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v1.23.1 \
-  #
-  # Gosec 2.1.0  -  https://github.com/securego/gosec
-  #
-  && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v2.2.0
+ENV GOLANGCI_LINT_VERSION 1.23.1
+ENV GOSEC_VERSION 2.2.0
+RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION} \
+  && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
 
 #
