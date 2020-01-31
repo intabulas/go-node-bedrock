@@ -1,4 +1,4 @@
-FROM golang:1.13.6
+FROM golang:1.13.7
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -95,8 +95,8 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 
 ENV NFPM_VERSION 1.1.8
 
-RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v1.1.8/nfpm_1.1.8_Linux_x86_64.tar.gz" \
-  && tar -xzvf "nfpm_1.1.8_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
+RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v1.1.10/nfpm_1.1.10_Linux_x86_64.tar.gz" \
+  && tar -xzvf "nfpm_1.1.10_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
 
 #
 # Install Golang deps
@@ -126,7 +126,7 @@ RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/in
   #
   # Gosec 2.1.0  -  https://github.com/securego/gosec
   #
-  && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v2.1.0
+  && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v2.2.0
 
 
 #
