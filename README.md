@@ -16,3 +16,4 @@ Included:
 - [librdkafka 1.3.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI latest](https://github.com/swaggo/swag)
 - [NFPM 1.1.10](https://github.com/goreleaser/nfpm)
+- [FailLint latest](https://github.com/fatih/faillint)

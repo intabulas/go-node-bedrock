@@ -134,3 +134,9 @@ RUN  /usr/local/bin/npm set progress=false \
   # YARN Package Manager
   #
   && npm install yarn prettier -g
+
+#
+# FailLint https://github.com/fatih/faillint
+#
+RUN go get github.com/fatih/faillint
+
