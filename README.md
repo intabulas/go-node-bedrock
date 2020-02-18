@@ -11,7 +11,7 @@ Included:
 - [Yarn 1.22.0](https://yarnpkg.com/)
 - [Dep latest](https://github.com/golang/dep)
 - [Packr v2.x](https://github.com/gobuffalo/packr)
-- [GolangCI Lint 1.23.3](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.23.6](https://github.com/golangci/golangci-lint)
 - [Gosec 2.2.0](https://github.com/securego/gosec)
 - [librdkafka 1.3.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI latest](https://github.com/swaggo/swag)
