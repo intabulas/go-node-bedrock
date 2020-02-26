@@ -91,18 +91,22 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && apt-get purge -y --auto-remove $buildDeps \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
+#
+# NFPM
+#
 ENV NFPM_VERSION 1.1.10
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
-  && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner
+  && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
+  && rm nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz
 
 #
 # Install Golang deps
 #
-RUN go get -u github.com/golang/dep/cmd/dep \
-  #
-  # packr
-  #
-  && go get -u github.com/gobuffalo/packr/v2/packr2
+
+#
+# packr
+#
+RUN  go get -u github.com/gobuffalo/packr/v2/packr2
 
 ENV GO111MODULE on
 
@@ -112,17 +116,18 @@ ENV GO111MODULE on
 RUN go get -u github.com/swaggo/swag/cmd/swag
 
 #
-# NFPM
-#
-#&& go get -u github.com/goreleaser/nfpm/...
-
-#
 # GolangCI Lint  and GoSec
 #
 ENV GOLANGCI_LINT_VERSION 1.23.6
 ENV GOSEC_VERSION 2.2.0
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION} \
   && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
+
+
+#
+# FailLint https://github.com/fatih/faillint
+#
+RUN go get github.com/fatih/faillint
 
 
 #
@@ -135,8 +140,4 @@ RUN  /usr/local/bin/npm set progress=false \
   #
   && npm install yarn prettier -g
 
-#
-# FailLint https://github.com/fatih/faillint
-#
-RUN go get github.com/fatih/faillint
 
