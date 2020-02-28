@@ -1,4 +1,4 @@
-# A Docker file with Go, Dep and Node (with npm and yarn)
+# A Docker file with Go, Node and other base goodies I need
 
 This is a base image that has the things I need to do backend and frontend development in golang and node. It also includes dep for legacy golang dependency management
 
@@ -12,7 +12,7 @@ Included:
 - [NodeJS 13.9.0](https://nodejs.org/en/) - includes NPM 6.13.7
 - [Yarn 1.22.0](https://yarnpkg.com/)
 - [Packr v2.x](https://github.com/gobuffalo/packr)
-- [GolangCI Lint 1.23.6](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.23.7](https://github.com/golangci/golangci-lint)
 - [Gosec 2.2.0](https://github.com/securego/gosec)
 - [librdkafka 1.3.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI latest](https://github.com/swaggo/swag)
