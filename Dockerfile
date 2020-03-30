@@ -1,4 +1,4 @@
-FROM golang:1.14.0
+FROM golang:1.14.1
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -52,7 +52,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 13.11.0
+ENV NODE_VERSION 13.12.0
 RUN set -ex \
   && for key in \
   94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
@@ -94,7 +94,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 #
 # NFPM
 #
-ENV NFPM_VERSION 1.1.10
+ENV NFPM_VERSION 1.2.1
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
   && rm nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz
@@ -118,7 +118,7 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 #
 # GolangCI Lint  and GoSec
 #
-ENV GOLANGCI_LINT_VERSION 1.23.7
+ENV GOLANGCI_LINT_VERSION 1.24.0
 ENV GOSEC_VERSION 2.2.0
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION} \
   && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
