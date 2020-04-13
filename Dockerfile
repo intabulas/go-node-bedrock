@@ -1,4 +1,4 @@
-FROM golang:1.14.1
+FROM golang:1.14.2
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -37,7 +37,7 @@ RUN apt-get update \
 #
 # librdkafka
 #
-ENV LIBRDKAFKA_VERSION 1.3.0
+ENV LIBRDKAFKA_VERSION 1.4.0
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
   && cd librdkafka-$LIBRDKAFKA_VERSION \
