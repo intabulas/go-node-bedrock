@@ -9,10 +9,10 @@ This is a base image that has the things I need to do backend and frontend devel
 Included:
 
 - [Golang 1.14.2](https://golang.org/)
-- [NodeJS 13.13.0](https://nodejs.org/en/) - includes NPM 6.14.4
+- [NodeJS 14.1.0](https://nodejs.org/en/) - includes NPM 6.14.4
 - [Yarn latest](https://yarnpkg.com/)
 - [Packr v2.x](https://github.com/gobuffalo/packr)
-- [GolangCI Lint 1.24.0](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.25.1](https://github.com/golangci/golangci-lint)
 - [Gosec 2.2.0](https://github.com/securego/gosec)
 - [librdkafka 1.4.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI latest](https://github.com/swaggo/swag)

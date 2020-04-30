@@ -52,7 +52,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 13.13.0
+ENV NODE_VERSION 14.1.0
 RUN set -ex \
   && for key in \
   94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
@@ -118,7 +118,7 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 #
 # GolangCI Lint  and GoSec
 #
-ENV GOLANGCI_LINT_VERSION 1.24.0
+ENV GOLANGCI_LINT_VERSION 1.25.1
 ENV GOSEC_VERSION 2.2.0
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION} \
   && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
