@@ -1,4 +1,4 @@
-FROM golang:1.14.2
+FROM golang:1.14.3
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -37,7 +37,7 @@ RUN apt-get update \
 #
 # librdkafka
 #
-ENV LIBRDKAFKA_VERSION 1.4.0
+ENV LIBRDKAFKA_VERSION 1.4.2
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
   && cd librdkafka-$LIBRDKAFKA_VERSION \
@@ -118,8 +118,8 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 #
 # GolangCI Lint  and GoSec
 #
-ENV GOLANGCI_LINT_VERSION 1.26.0
-ENV GOSEC_VERSION 2.2.0
+ENV GOLANGCI_LINT_VERSION 1.27.0
+ENV GOSEC_VERSION 2.3.0
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION} \
   && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
