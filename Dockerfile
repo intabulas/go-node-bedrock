@@ -37,7 +37,7 @@ RUN apt-get update \
 #
 # librdkafka
 #
-ENV LIBRDKAFKA_VERSION 1.4.2
+ENV LIBRDKAFKA_VERSION 1.4.4
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
   && cd librdkafka-$LIBRDKAFKA_VERSION \
@@ -52,7 +52,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 14.4.0
+ENV NODE_VERSION 14.5.0
 RUN set -ex \
   && for key in \
   94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
@@ -94,7 +94,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 #
 # NFPM
 #
-ENV NFPM_VERSION 1.3.1
+ENV NFPM_VERSION 1.3.2
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
   && rm nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz
