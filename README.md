@@ -8,7 +8,7 @@ This is a base image that has the things I need to do backend and frontend devel
 
 Included:
 
-- [Golang 1.15.1](https://golang.org/)
+- [Golang 1.15.2](https://golang.org/)
 - [NodeJS 14.10.1](https://nodejs.org/en/) - includes NPM 6.14.8
 - [Yarn latest](https://yarnpkg.com/)
 - [Packr v2.x](https://github.com/gobuffalo/packr)
