@@ -52,7 +52,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 14.10.1
+ENV NODE_VERSION 14.11.0
 RUN set -ex \
   && for key in \
   4ED778F539E3634C779C87C6D7062848A1AB005C \
