@@ -3,6 +3,17 @@ FROM golang:1.15.2
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
 
+# Versions
+ENV LIBRDKAFKA_VERSION 1.5.0
+ENV NODE_VERSION 14.13.1
+ENV NFPM_VERSION 1.8.0
+ENV GOLANGCI_LINT_VERSION 1.31.0
+ENV GOSEC_VERSION 2.4.0
+ENV YARN_VERSION 1.22.10
+ENV PRETTIER_VERSION 2.1.2
+ENV RUSH_VERSION 5.34.3
+ENV PNPM_VERSION 5.9.0
+
 # Env for apt-get
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -38,7 +49,6 @@ RUN apt-get update \
 #
 # librdkafka
 #
-ENV LIBRDKAFKA_VERSION 1.5.0
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
   && cd librdkafka-$LIBRDKAFKA_VERSION \
@@ -53,7 +63,6 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 14.13.1
 RUN set -ex \
   && for key in \
   4ED778F539E3634C779C87C6D7062848A1AB005C \
@@ -94,7 +103,6 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 #
 # NFPM
 #
-ENV NFPM_VERSION 1.8.0
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
   && rm nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz
@@ -106,7 +114,7 @@ RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/downlo
 #
 # packr
 #
-RUN  go get -u github.com/gobuffalo/packr/v2/packr2
+RUN go get -u github.com/gobuffalo/packr/v2/packr2
 
 ENV GO111MODULE on
 
@@ -116,19 +124,19 @@ ENV GO111MODULE on
 RUN go get -u github.com/swaggo/swag/cmd/swag
 
 #
-# GolangCI Lint  and GoSec
+# GolangCI Lint
 #
-ENV GOLANGCI_LINT_VERSION 1.31.0
-ENV GOSEC_VERSION 2.4.0
-RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION} \
-  && curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
+RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
+#
+# GoSec
+#
+RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
 #
 # FailLint https://github.com/fatih/faillint
 #
 RUN go get github.com/fatih/faillint
-
 
 #
 # Install Node deps and settings
@@ -138,6 +146,6 @@ RUN  /usr/local/bin/npm set progress=false \
   #
   # YARN Package Manager
   #
-  && npm install yarn prettier -g
+  && npm install yarn@${YARN_VERSION} prettier@${PRETTIER_VERSION} @microsoft/rush@${RUSH_VERSION} pnpm@${PNPM_VERSION} -g
 
 
