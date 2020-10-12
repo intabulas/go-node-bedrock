@@ -29,6 +29,7 @@ RUN apt-get update \
   netcat \
   git \
   rpm \
+  gettext-base \
   multiarch-support \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
