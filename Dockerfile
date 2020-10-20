@@ -3,17 +3,6 @@ FROM golang:1.15.3
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
 
-# Versions
-ENV LIBRDKAFKA_VERSION 1.5.0
-ENV NODE_VERSION 14.14.0
-ENV NFPM_VERSION 1.8.0
-ENV GOLANGCI_LINT_VERSION 1.31.0
-ENV GOSEC_VERSION 2.4.0
-ENV YARN_VERSION 1.22.10
-ENV PRETTIER_VERSION 2.1.2
-ENV RUSH_VERSION 5.34.3
-ENV PNPM_VERSION 5.9.0
-
 # Env for apt-get
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -45,6 +34,16 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Versions
+ENV LIBRDKAFKA_VERSION 1.5.2
+ENV NODE_VERSION 15.0.0
+ENV NFPM_VERSION 1.8.0
+ENV GOLANGCI_LINT_VERSION 1.31.0
+ENV GOSEC_VERSION 2.4.0
+ENV YARN_VERSION 1.22.10
+ENV PRETTIER_VERSION 2.1.2
+ENV RUSH_VERSION 5.34.3
+ENV PNPM_VERSION 5.9.0
 
 #
 # librdkafka
@@ -112,9 +111,10 @@ RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/downlo
 #
 
 #
-# packr
+# packr and pkgr
 #
-RUN go get -u github.com/gobuffalo/packr/v2/packr2
+RUN go get -u github.com/gobuffalo/packr/v2/packr2 \
+  && go get github.com/markbates/pkger/cmd/pkger
 
 ENV GO111MODULE on
 
