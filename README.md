@@ -14,7 +14,7 @@ Included:
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
 - [Rush 5.34.4](https://rushjs.io/)
 - [PNMP 5.10.1](https://pnpm.js.org/)
-- [GolangCI Lint 1.31.0](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.32.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.4.0](https://github.com/securego/gosec)
 - [librdkafka 1.5.2](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.6.9](https://github.com/swaggo/swag)
