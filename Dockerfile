@@ -3,7 +3,9 @@ FROM golang:1.15.3
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
 
+#
 # Env for apt-get
+#
 ENV DEBIAN_FRONTEND noninteractive
 
 #
@@ -34,16 +36,18 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+#
 # Versions
+#
 ENV LIBRDKAFKA_VERSION 1.5.2
 ENV NODE_VERSION 15.0.1
 ENV NFPM_VERSION 1.8.0
-ENV GOLANGCI_LINT_VERSION 1.32.0
-ENV GOSEC_VERSION 2.4.0
+ENV GOLANGCI_LINT_VERSION 1.32.1
+ENV GOSEC_VERSION 2.5.0
 ENV YARN_VERSION 1.22.10
 ENV PRETTIER_VERSION 2.1.2
-ENV RUSH_VERSION 5.34.3
-ENV PNPM_VERSION 5.10.1
+ENV RUSH_VERSION 5.35.1
+ENV PNPM_VERSION 5.10.2
 
 #
 # librdkafka
@@ -60,7 +64,6 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # NodeJS
 # Kept up to date from https://github.com/nodejs/docker-node/blob/master/14/alpine3.11/Dockerfile
 #
-
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
   && for key in \
@@ -144,7 +147,7 @@ RUN go get github.com/fatih/faillint
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
-  # YARN Package Manager
+  # Yarn, Prettier, Rush and Pnpm
   #
   && npm install yarn@${YARN_VERSION} prettier@${PRETTIER_VERSION} @microsoft/rush@${RUSH_VERSION} pnpm@${PNPM_VERSION} -g
 
