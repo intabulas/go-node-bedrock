@@ -8,12 +8,12 @@ Included:
 
 - [Golang 1.15.3](https://golang.org/)
 - [NodeJS 15.0.1](https://nodejs.org/en/) - includes NPM 7.0.3
-- [Yarn 1.22.10](https://yarnpkg.com/)
-- [Prettier 2.1.2](https://prettier.io/)
+- [Yarn 1.22.10](https://www.npmjs.com/package/yarn)
+- [Prettier 2.1.2](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.0](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
-- [Rush 5.35.1](https://rushjs.io/)
-- [PNMP 5.10.4](https://pnpm.js.org/)
+- [Rush 5.35.2](https://www.npmjs.com/package/@microsoft/rush)
+- [PNMP 5.10.4](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.32.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.5.0](https://github.com/securego/gosec)
 - [librdkafka 1.5.2](https://github.com/edenhill/librdkafka)
