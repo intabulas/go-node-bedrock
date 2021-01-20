@@ -6,7 +6,7 @@ This is a base image that has the things I need to do backend and frontend devel
 
 Included:
 
-- [Golang 1.15.6](https://golang.org/)
+- [Golang 1.15.7](https://golang.org/)
 - [NodeJS 15.6.0](https://nodejs.org/en/) - includes NPM 7.4.0
 - [Yarn 1.22.10](https://www.npmjs.com/package/yarn)
 - [Prettier 2.2.1](https://www.npmjs.com/package/prettier)
