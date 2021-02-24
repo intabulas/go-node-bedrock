@@ -7,16 +7,17 @@ This is a base image that has the things I need to do backend and frontend devel
 Included:
 
 - [Golang 1.16.0](https://golang.org/)
-- [NodeJS 15.8.0](https://nodejs.org/en/) - includes NPM 7.5.1
+- [NodeJS 15.10.0](https://nodejs.org/en/) - includes NPM 7.5.3
 - [Yarn 1.22.10](https://www.npmjs.com/package/yarn)
 - [Prettier 2.2.1](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
-- [Rush 5.39.1](https://www.npmjs.com/package/@microsoft/rush)
-- [PNPM 5.17.1](https://www.npmjs.com/package/pnpm)
-- [GolangCI Lint 1.36.0](https://github.com/golangci/golangci-lint)
+- [Rush 5.40.5](https://www.npmjs.com/package/@microsoft/rush)
+- [PNPM 5.17.3](https://www.npmjs.com/package/pnpm)
+- [Lerna 3.22.1](https://github.com/lerna/lerna)
+- [GolangCI Lint 1.37.1](https://github.com/golangci/golangci-lint)
 - [Gosec 2.6.1](https://github.com/securego/gosec)
-- [librdkafka 1.6.0](https://github.com/edenhill/librdkafka)
+- [librdkafka 1.6.1](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.7.0](https://github.com/swaggo/swag)
 - [NFPM 2.2.4](https://github.com/goreleaser/nfpm)
 - [FailLint 1.5.0](https://github.com/fatih/faillint)
