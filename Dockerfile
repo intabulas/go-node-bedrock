@@ -55,7 +55,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # Kept up to date from https://github.com/nodejs/docker-node/blob/master/15/alpine3.11/Dockerfile
 #
 
-ENV NODE_VERSION 15.12.0
+ENV NODE_VERSION 15.13.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
