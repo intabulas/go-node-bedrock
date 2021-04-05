@@ -1,4 +1,4 @@
-FROM golang:1.16.2
+FROM golang:1.16.3
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -127,7 +127,7 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.38.0
+ENV GOLANGCI_LINT_VERSION 1.39.0
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
@@ -160,8 +160,8 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.42.3
-ENV PNPM_VERSION 5.18.8
+ENV RUSH_VERSION 5.42.4
+ENV PNPM_VERSION 5.18.9
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
