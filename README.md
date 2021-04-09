@@ -7,14 +7,14 @@ This is a base image that has the things I need to do backend and frontend devel
 
 Included:
 
-- [Golang 1.16.3](https://golang.org/)
-- [NodeJS 15.13.0](https://nodejs.org/en/) - includes NPM 7.7.6
+- [Golang 1.16.3](https://golang.org/dl/)
+- [NodeJS 15.14.0](https://nodejs.org/en/download/current/) - includes NPM 7.7.6
 - [Yarn 1.22.10](https://www.npmjs.com/package/yarn)
 - [Prettier 2.2.1](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
-- [Rush 5.42.4](https://www.npmjs.com/package/@microsoft/rush)
-- [PNPM 5.18.9](https://www.npmjs.com/package/pnpm)
+- [Rush 5.43.0](https://www.npmjs.com/package/@microsoft/rush)
+- [PNPM 6.0.1](https://www.npmjs.com/package/pnpm)
 - [Lerna 4.0.0](https://github.com/lerna/lerna)
 - [GolangCI Lint 1.39.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.7.0](https://github.com/securego/gosec)

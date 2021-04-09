@@ -55,7 +55,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # Kept up to date from https://github.com/nodejs/docker-node/blob/master/15/alpine3.11/Dockerfile
 #
 
-ENV NODE_VERSION 15.13.0
+ENV NODE_VERSION 15.14.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -160,8 +160,8 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.42.4
-ENV PNPM_VERSION 5.18.9
+ENV RUSH_VERSION 5.43.0
+ENV PNPM_VERSION 6.0.1
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
