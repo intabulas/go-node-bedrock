@@ -20,5 +20,5 @@ Included:
 - [Gosec 2.7.0](https://github.com/securego/gosec)
 - [librdkafka 1.6.1](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.7.0](https://github.com/swaggo/swag)
-- [NFPM 2.3.1](https://github.com/goreleaser/nfpm)
+- [NFPM 2.5.0](https://github.com/goreleaser/nfpm)
 - [FailLint 1.7.0](https://github.com/fatih/faillint)
