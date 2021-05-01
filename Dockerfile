@@ -160,7 +160,7 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.43.0
+ENV RUSH_VERSION 5.45.6
 ENV PNPM_VERSION 6.2.3
 
 RUN  /usr/local/bin/npm set progress=false \
