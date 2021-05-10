@@ -40,7 +40,7 @@ RUN apt-get update \
 # librdkafka
 #
 
-ENV LIBRDKAFKA_VERSION 1.6.1
+ENV LIBRDKAFKA_VERSION 1.7.0
 
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
@@ -100,7 +100,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 # NFPM
 #
 
-ENV NFPM_VERSION 2.5.0
+ENV NFPM_VERSION 2.5.1
 
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
@@ -127,7 +127,7 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.39.0
+ENV GOLANGCI_LINT_VERSION 1.40.0
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
@@ -160,8 +160,8 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.45.6
-ENV PNPM_VERSION 6.2.3
+ENV RUSH_VERSION 5.46.1
+ENV PNPM_VERSION 6.3.0
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
