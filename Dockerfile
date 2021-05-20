@@ -127,7 +127,7 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.40.0
+ENV GOLANGCI_LINT_VERSION 1.40.1
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
@@ -160,8 +160,8 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.46.1
-ENV PNPM_VERSION 6.3.0
+ENV RUSH_VERSION 5.47.0
+ENV PNPM_VERSION 6.4.0
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
