@@ -140,6 +140,11 @@ ENV GOSEC_VERSION 2.8.0
 RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
 #
+# Revive
+#
+RUN go get -u github.com/mgechev/revive
+
+#
 # FailLint https://github.com/fatih/faillint
 #
 RUN go get github.com/fatih/faillint
