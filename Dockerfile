@@ -1,4 +1,4 @@
-FROM golang:1.16.6
+FROM golang:1.16.7
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -166,7 +166,7 @@ RUN  /usr/local/bin/npm set progress=false \
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
 ENV RUSH_VERSION 5.50.0
-ENV PNPM_VERSION 6.10.3
+ENV PNPM_VERSION 6.12.0
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
