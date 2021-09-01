@@ -32,7 +32,6 @@ RUN apt-get update \
   git \
   rpm \
   gettext-base \
-  multiarch-support \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -53,9 +52,10 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #
 # NodeJS
 # Kept up to date from https://github.com/nodejs/docker-node/blob/master/15/alpine3.11/Dockerfile
+#                  and https://github.com/nodejs/docker-node/blob/main/16/alpine3.14/Dockerfile
 #
 
-ENV NODE_VERSION 15.14.0
+ENV NODE_VERSION 16.8.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \

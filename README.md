@@ -2,15 +2,13 @@
 
 This is a base image that has the things I need to do backend and frontend development in golang and node.
 
-**NOTE** I have not upgrade to NodeJS 16.x intentionally since I have some VueJS 2.x apps that use Sass and node-sass/sass-loader have build issues with 16.x
-
 **UPDATE** I also use the official confluent go lib, which requires librdkafka. This image now has librdkafka installed for building
 **UPDATE** At somepoint I will remove pkgr/packr as 1.16 and go:embed is used more
 
 Included:
 
 - [Golang 1.17.0](https://golang.org/dl/)
-- [NodeJS 15.14.0](https://nodejs.org/en/download/current/) - includes NPM 7.10.0
+- [NodeJS 16.8.0](https://nodejs.org/en/download/current/) - includes NPM 7.21.0
 - [Yarn 1.22.11](https://www.npmjs.com/package/yarn)
 - [Prettier 2.3.2](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
