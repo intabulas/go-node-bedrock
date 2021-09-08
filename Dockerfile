@@ -55,7 +55,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #                  and https://github.com/nodejs/docker-node/blob/main/16/alpine3.14/Dockerfile
 #
 
-ENV NODE_VERSION 16.8.0
+ENV NODE_VERSION 16.9.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -127,7 +127,7 @@ RUN go get -u github.com/swaggo/swag/cmd/swag
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.42.0
+ENV GOLANGCI_LINT_VERSION 1.42.1
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
