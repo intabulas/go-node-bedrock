@@ -10,7 +10,7 @@ Included:
 - [Golang 1.17.1](https://golang.org/dl/)
 - [NodeJS 16.10.0](https://nodejs.org/en/download/current/) - includes NPM 7.24.0
 - [Yarn 1.22.11](https://www.npmjs.com/package/yarn)
-- [Prettier 2.3.2](https://www.npmjs.com/package/prettier)
+- [Prettier 2.4.1](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
 - [Rush 5.52.0](https://www.npmjs.com/package/@microsoft/rush)
