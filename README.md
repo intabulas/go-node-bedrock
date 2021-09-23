@@ -13,7 +13,7 @@ Included:
 - [Prettier 2.4.1](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
-- [Rush 5.52.0](https://www.npmjs.com/package/@microsoft/rush)
+- [Rush 5.54.0](https://www.npmjs.com/package/@microsoft/rush)
 - [PNPM 6.14.5](https://www.npmjs.com/package/pnpm)
 - [Lerna 4.0.0](https://github.com/lerna/lerna)
 - [GolangCI Lint 1.42.1](https://github.com/golangci/golangci-lint)
