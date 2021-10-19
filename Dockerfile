@@ -39,7 +39,7 @@ RUN apt-get update \
 # librdkafka
 #
 
-ENV LIBRDKAFKA_VERSION 1.8.0
+ENV LIBRDKAFKA_VERSION 1.8.2
 
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
