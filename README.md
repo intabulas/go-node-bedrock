@@ -1,4 +1,4 @@
-# A Docker file with Go, Node and other base goodies I need
+****# A Docker file with Go, Node and other base goodies I need
 
 This is a base image that has the things I need to do backend and frontend development in golang and node.
 
@@ -14,12 +14,12 @@ Included:
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
 - [Rush 5.55.1](https://www.npmjs.com/package/@microsoft/rush)
-- [PNPM 6.18.0](https://www.npmjs.com/package/pnpm)
+- [PNPM 6.19.1](https://www.npmjs.com/package/pnpm)
 - [Lerna 4.0.0](https://github.com/lerna/lerna)
 - [GolangCI Lint 1.42.1](https://github.com/golangci/golangci-lint)
 - [Gosec 2.9.1](https://github.com/securego/gosec)
 - [librdkafka 1.8.2](https://github.com/edenhill/librdkafka)
-- [Swag CLI 1.7.3](https://github.com/swaggo/swag)
+- [Swag CLI 1.7.4](https://github.com/swaggo/swag)
 - [NFPM 2.7.1](https://github.com/goreleaser/nfpm)
 - [FailLint 1.7.0](https://github.com/fatih/faillint)
 - [Revive 1.1.2](https://github.com/mgechev/revive)
