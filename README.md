@@ -16,7 +16,7 @@ Included:
 - [Rush 5.55.1](https://www.npmjs.com/package/@microsoft/rush)
 - [PNPM 6.19.1](https://www.npmjs.com/package/pnpm)
 - [Lerna 4.0.0](https://github.com/lerna/lerna)
-- [GolangCI Lint 1.42.1](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.43.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.9.1](https://github.com/securego/gosec)
 - [librdkafka 1.8.2](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.7.4](https://github.com/swaggo/swag)
