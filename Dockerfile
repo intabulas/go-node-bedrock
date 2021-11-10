@@ -55,7 +55,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #                  and https://github.com/nodejs/docker-node/blob/main/16/alpine3.14/Dockerfile
 #
 
-ENV NODE_VERSION 17.0.1
+ENV NODE_VERSION 17.1.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -99,7 +99,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 # NFPM
 #
 
-ENV NFPM_VERSION 2.7.1
+ENV NFPM_VERSION 2.8.0
 
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
@@ -165,7 +165,7 @@ RUN  /usr/local/bin/npm set progress=false \
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
 ENV RUSH_VERSION 5.56.0
-ENV PNPM_VERSION 6.20.2
+ENV PNPM_VERSION 6.21.0
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \

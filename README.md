@@ -8,18 +8,18 @@ This is a base image that has the things I need to do backend and frontend devel
 Included:
 
 - [Golang 1.17.3](https://golang.org/dl/)
-- [NodeJS 17.0.1](https://nodejs.org/en/download/current/) - includes NPM 8.1.0
+- [NodeJS 17.1.0](https://nodejs.org/en/download/current/) - includes NPM 8.1.2
 - [Yarn 1.22.17](https://www.npmjs.com/package/yarn)
 - [Prettier 2.4.1](https://www.npmjs.com/package/prettier)
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
 - [Rush 5.56.0](https://www.npmjs.com/package/@microsoft/rush)
-- [PNPM 6.20.2](https://www.npmjs.com/package/pnpm)
+- [PNPM 6.21.0](https://www.npmjs.com/package/pnpm)
 - [Lerna 4.0.0](https://github.com/lerna/lerna)
 - [GolangCI Lint 1.43.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.9.1](https://github.com/securego/gosec)
 - [librdkafka 1.8.2](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.7.4](https://github.com/swaggo/swag)
-- [NFPM 2.7.1](https://github.com/goreleaser/nfpm)
+- [NFPM 2.8.0](https://github.com/goreleaser/nfpm)
 - [FailLint 1.7.0](https://github.com/fatih/faillint)
 - [Revive 1.1.2](https://github.com/mgechev/revive)
