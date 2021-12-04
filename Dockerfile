@@ -134,7 +134,7 @@ RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/in
 # GoSec
 #
 
-ENV GOSEC_VERSION 2.9.1
+ENV GOSEC_VERSION 2.9.3
 
 RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
