@@ -14,7 +14,7 @@ Included:
 - [Packr 2.8.1](https://github.com/gobuffalo/packr)
 - [Pkgr 0.17.1](https://github.com/markbates/pkger)
 - [Rush 5.57.0](https://www.npmjs.com/package/@microsoft/rush)
-- [PNPM 6.21.0](https://www.npmjs.com/package/pnpm)
+- [PNPM 6.23.6](https://www.npmjs.com/package/pnpm)
 - [Lerna 4.0.0](https://github.com/lerna/lerna)
 - [GolangCI Lint 1.43.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.9.1](https://github.com/securego/gosec)
