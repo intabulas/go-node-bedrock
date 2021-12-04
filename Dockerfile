@@ -152,7 +152,7 @@ RUN go get github.com/fatih/faillint
 # Install Node deps and settings
 #
 ENV YARN_VERSION 1.22.17
-ENV PRETTIER_VERSION 2.4.1
+ENV PRETTIER_VERSION 2.5.1
 ENV LERNA_VERSION=4.0.0
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
