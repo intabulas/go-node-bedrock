@@ -1,4 +1,4 @@
-FROM golang:1.17.4
+FROM golang:1.17.5
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -134,7 +134,7 @@ RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/in
 # GoSec
 #
 
-ENV GOSEC_VERSION 2.9.3
+ENV GOSEC_VERSION 2.9.5
 
 RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
@@ -164,8 +164,8 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.57.0
-ENV PNPM_VERSION 6.23.6
+ENV RUSH_VERSION 5.57.1
+ENV PNPM_VERSION 6.24.1
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
