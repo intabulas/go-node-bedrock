@@ -23,3 +23,4 @@ Included:
 - [NFPM 2.11.3](https://github.com/goreleaser/nfpm)
 - [FailLint 1.8.0](https://github.com/fatih/faillint)
 - [Revive 1.1.2](https://github.com/mgechev/revive)
+- [gofumpt 0.2.1](https://github.com/mvdan/gofumpt)

@@ -149,6 +149,12 @@ RUN go get -u github.com/mgechev/revive
 RUN go get github.com/fatih/faillint
 
 #
+# gofumpt https://github.com/mvdan/gofumpt
+#
+RUN go install mvdan.cc/gofumpt@latest
+
+
+#
 # Install Node deps and settings
 #
 ENV YARN_VERSION 1.22.17
