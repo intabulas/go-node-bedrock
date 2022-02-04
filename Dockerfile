@@ -55,7 +55,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 #                  and https://github.com/nodejs/docker-node/blob/main/16/alpine3.14/Dockerfile
 #
 
-ENV NODE_VERSION 17.3.1
+ENV NODE_VERSION 17.4.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -159,13 +159,12 @@ RUN go install mvdan.cc/gofumpt@latest
 #
 ENV YARN_VERSION 1.22.17
 ENV PRETTIER_VERSION 2.5.1
-ENV LERNA_VERSION=4.0.0
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
   # Yarn, Prettier, Rush and Pnpm
   #
-  && npm install yarn@${YARN_VERSION} prettier@${PRETTIER_VERSION} lerna@${LERNA_VERSION} -g
+  && npm install yarn@${YARN_VERSION} prettier@${PRETTIER_VERSION}  -g
 
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
