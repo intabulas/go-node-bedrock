@@ -20,7 +20,7 @@ Included:
 - [GolangCI Lint 1.44.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.10.0](https://github.com/securego/gosec)
 - [librdkafka 1.8.2](https://github.com/edenhill/librdkafka)
-- [Swag CLI 1.7.9](https://github.com/swaggo/swag)
+- [Swag CLI 1.8.0](https://github.com/swaggo/swag)
 - [NFPM 2.12.2](https://github.com/goreleaser/nfpm)
 - [FailLint 1.8.0](https://github.com/fatih/faillint)
 - [Revive 1.1.3](https://github.com/mgechev/revive)
