@@ -3,9 +3,9 @@
 This is a base image that has the things I need to do backend and frontend development in golang and node.
 
 **UPDATE** I also use the official confluent go lib, which requires librdkafka. This image now has librdkafka installed for building
-**UPDATE** At somepoint I will remove pkgr/packr as 1.16 and go:embed is used more
 
-Feb 4th, 2020 - Lerna has been removed
+Feb 23rd, 2022 - pkger and packr were removed
+Feb  4th, 2022 - Lerna has been removed
 
 Included:
 
@@ -13,8 +13,6 @@ Included:
 - [NodeJS 17.6.0](https://nodejs.org/en/download/current/) - includes NPM 8.5.1
 - [Yarn 1.22.17](https://www.npmjs.com/package/yarn)
 - [Prettier 2.5.1](https://www.npmjs.com/package/prettier)
-- [Packr 2.8.3](https://github.com/gobuffalo/packr)
-- [Pkgr 0.17.1](https://github.com/markbates/pkger)
 - [Rush 5.62.4](https://www.npmjs.com/package/@microsoft/rush)
 - [PNPM 6.32.1](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.44.2](https://github.com/golangci/golangci-lint)

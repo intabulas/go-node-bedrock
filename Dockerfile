@@ -109,12 +109,6 @@ RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/downlo
 # Install Golang deps
 #
 
-#
-# packr and pkgr
-#
-RUN go get -u github.com/gobuffalo/packr/v2/packr2 \
-  && go get github.com/markbates/pkger/cmd/pkger
-
 ENV GO111MODULE on
 
 #
