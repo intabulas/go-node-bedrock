@@ -16,7 +16,7 @@ Included:
 - [Yarn 1.22.17](https://www.npmjs.com/package/yarn)
 - [Prettier 2.5.1](https://www.npmjs.com/package/prettier)
 - [Rush 5.62.4](https://www.npmjs.com/package/@microsoft/rush)
-- [PNPM 6.32.1](https://www.npmjs.com/package/pnpm)
+- [PNPM 6.32.3](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.44.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.10.0](https://github.com/securego/gosec)
 - [librdkafka 1.8.2](https://github.com/edenhill/librdkafka)
