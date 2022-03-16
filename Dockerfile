@@ -1,4 +1,4 @@
-FROM golang:1.17.8
+FROM golang:1.18.0
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -114,8 +114,7 @@ ENV GO111MODULE on
 #
 # Swag CLI
 #
-RUN go get -u github.com/swaggo/swag/cmd/swag
-
+RUN go install github.com/swaggo/swag/cmd/swag@latest
 #
 # GolangCI Lint
 #
@@ -135,13 +134,12 @@ RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh
 #
 # Revive
 #
-RUN go get -u github.com/mgechev/revive
+RUN go install github.com/mgechev/revive@latest
 
 #
 # FailLint https://github.com/fatih/faillint
 #
-RUN go get github.com/fatih/faillint
-
+RUN go install github.com/fatih/faillint@latest
 #
 # gofumpt https://github.com/mvdan/gofumpt
 #
