@@ -150,18 +150,17 @@ RUN go install mvdan.cc/gofumpt@latest
 # Install Node deps and settings
 #
 ENV YARN_VERSION 1.22.17
-ENV PRETTIER_VERSION 2.5.1
+ENV PRETTIER_VERSION 2.6.0
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
-  # Yarn, Prettier, Rush and Pnpm
+  # Yarn, Prettier and Pnpm
   #
   && npm install yarn@${YARN_VERSION} prettier@${PRETTIER_VERSION}  -g
 
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV RUSH_VERSION 5.62.4
 ENV PNPM_VERSION 6.32.3
 
 RUN  /usr/local/bin/npm set progress=false \
@@ -169,6 +168,6 @@ RUN  /usr/local/bin/npm set progress=false \
   #
   # Yarn, Prettier, Rush and Pnpm
   #
-  && npm install @microsoft/rush@${RUSH_VERSION} pnpm@${PNPM_VERSION} -g
+  && npm install pnpm@${PNPM_VERSION} -g
 
 
