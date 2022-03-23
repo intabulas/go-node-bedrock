@@ -51,16 +51,16 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 
 #
 # NodeJS
-# Kept up to date from https://github.com/nodejs/docker-node/blob/master/15/alpine3.11/Dockerfile
-#                  and https://github.com/nodejs/docker-node/blob/main/16/alpine3.14/Dockerfile
+# Kept up to date from https://github.com/nodejs/docker-node/blob/main/17/alpine3.15/Dockerfile
 #
 
-ENV NODE_VERSION 17.7.1
+ENV NODE_VERSION 17.8.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
   && for key in \
   4ED778F539E3634C779C87C6D7062848A1AB005C \
+  141F07595B7B3FFE74309A937405533BE57C7D57 \
   94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
   74F12602B6F1C4E913FAA37AD3A89613643B6201 \
   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1 \
