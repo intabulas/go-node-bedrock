@@ -14,7 +14,7 @@ Included:
 
 - [Golang 1.18.0](https://golang.org/dl/)
 - [NodeJS 17.9.0](https://nodejs.org/en/download/current/) - includes NPM 8.5.5
-- [Yarn 1.22.17](https://www.npmjs.com/package/yarn)
+- [Yarn 1.22.18](https://www.npmjs.com/package/yarn)
 - [Prettier 2.6.0](https://www.npmjs.com/package/prettier)
 - [PNPM 6.32.3](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.44.2](https://github.com/golangci/golangci-lint)
