@@ -119,7 +119,7 @@ RUN go install github.com/swaggo/swag/cmd/swag@latest
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.45.2
+ENV GOLANGCI_LINT_VERSION 1.46.2
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
@@ -154,20 +154,17 @@ ENV PRETTIER_VERSION 2.7.1
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
-  # Yarn, Prettier and Pnpm
+  # Yarn and Prettier
   #
   && npm install yarn@${YARN_VERSION} prettier@${PRETTIER_VERSION}  -g
 
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV PNPM_VERSION 7.0.0
+ENV PNPM_VERSION 7.2.1
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
-  #
-  # Yarn, Prettier, Rush and Pnpm
-  #
   && npm install pnpm@${PNPM_VERSION} -g
 
 

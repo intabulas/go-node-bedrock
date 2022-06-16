@@ -16,8 +16,8 @@ Included:
 - [NodeJS 18.4.0](https://nodejs.org/en/download/current/) - includes NPM 8.12.1
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
 - [Prettier 2.7.1](https://www.npmjs.com/package/prettier)
-- [PNPM 7.0.0](https://www.npmjs.com/package/pnpm)
-- [GolangCI Lint 1.45.2](https://github.com/golangci/golangci-lint)
+- [PNPM 7.2.1](https://www.npmjs.com/package/pnpm)
+- [GolangCI Lint 1.46.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.11.0](https://github.com/securego/gosec)
 - [librdkafka 1.8.2](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.8.1](https://github.com/swaggo/swag)
