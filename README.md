@@ -22,6 +22,6 @@ Included:
 - [librdkafka 1.9.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.8.3](https://github.com/swaggo/swag)
 - [NFPM 2.16.0](https://github.com/goreleaser/nfpm)
-- [FailLint 1.8.0](https://github.com/fatih/faillint)
+- [FailLint 1.10.0](https://github.com/fatih/faillint)
 - [Revive 1.2.1](https://github.com/mgechev/revive)
 - [gofumpt 0.3.1](https://github.com/mvdan/gofumpt)
