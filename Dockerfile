@@ -1,4 +1,4 @@
-FROM golang:1.18.3
+FROM golang:1.18.4
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
