@@ -16,7 +16,7 @@ Included:
 - [NodeJS 18.6.0](https://nodejs.org/en/download/current/) - includes NPM 8.13.2
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
 - [Prettier 2.7.1](https://www.npmjs.com/package/prettier)
-- [PNPM 7.2.1](https://www.npmjs.com/package/pnpm)
+- [PNPM 7.5.1](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.46.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.12.0](https://github.com/securego/gosec)
 - [librdkafka 1.9.0](https://github.com/edenhill/librdkafka)
