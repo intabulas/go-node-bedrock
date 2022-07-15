@@ -13,7 +13,7 @@ Feb 4th, 2022 - Lerna has been removed
 Included:
 
 - [Golang 1.18.4](https://golang.org/dl/)
-- [NodeJS 18.4.0](https://nodejs.org/en/download/current/) - includes NPM 8.12.1
+- [NodeJS 18.6.0](https://nodejs.org/en/download/current/) - includes NPM 8.13.2
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
 - [Prettier 2.7.1](https://www.npmjs.com/package/prettier)
 - [PNPM 7.2.1](https://www.npmjs.com/package/pnpm)
