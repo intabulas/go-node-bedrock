@@ -58,7 +58,8 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
   && cd librdkafka-$LIBRDKAFKA_VERSION \
   && ./configure --install-deps \
   && make \
-  && make install
+  && make install \
+  && cd .. && rm v$LIBRDKAFKA_VERSION.tar.gz &&  rm -rf librdkafka-$LIBRDKAFKA_VERSION
 
 
 #
