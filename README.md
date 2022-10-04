@@ -25,5 +25,5 @@ Included:
 - [Swag CLI 1.8.6](https://github.com/swaggo/swag)
 - [NFPM 2.19.2](https://github.com/goreleaser/nfpm)
 - [FailLint 1.11.0](https://github.com/fatih/faillint)
-- [Revive 1.2.3](https://github.com/mgechev/revive)
-- [gofumpt 0.3.1](https://github.com/mvdan/gofumpt)
+- [Revive 1.2.4](https://github.com/mgechev/revive)
+- [gofumpt 0.4.0](https://github.com/mvdan/gofumpt)
