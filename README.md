@@ -18,7 +18,7 @@ Included:
 - [vlang 0.3.1](https://vlang.io/)
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
 - [Prettier 2.7.1](https://www.npmjs.com/package/prettier)
-- [PNPM 7.9.5](https://www.npmjs.com/package/pnpm)
+- [PNPM 7.13.1](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.49.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.13.1](https://github.com/securego/gosec)
 - [librdkafka 1.9.2](https://github.com/edenhill/librdkafka)
