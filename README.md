@@ -13,17 +13,17 @@ Feb 4th, 2022 - Lerna has been removed
 
 Included:
 
-- [Golang 1.19.2](https://golang.org/dl/)
-- [NodeJS 18.10.0](https://nodejs.org/en/download/current/) - includes NPM 8.19.2
-- [vlang 0.3.1](https://vlang.io/)
+- [Golang 1.19.3](https://golang.org/dl/)
+- [NodeJS 19.1.0](https://nodejs.org/en/download/current/) - includes NPM 8.19.3
+- [vlang 0.3.2](https://vlang.io/)
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
-- [Prettier 2.7.1](https://www.npmjs.com/package/prettier)
-- [PNPM 7.13.1](https://www.npmjs.com/package/pnpm)
-- [GolangCI Lint 1.50.0](https://github.com/golangci/golangci-lint)
-- [Gosec 2.13.1](https://github.com/securego/gosec)
+- [Prettier 2.8.0](https://www.npmjs.com/package/prettier)
+- [PNPM 7.17.0](https://www.npmjs.com/package/pnpm)
+- [GolangCI Lint 1.50.1](https://github.com/golangci/golangci-lint)
+- [Gosec 2.14.0](https://github.com/securego/gosec)
 - [librdkafka 1.9.2](https://github.com/edenhill/librdkafka)
-- [Swag CLI 1.8.6](https://github.com/swaggo/swag)
-- [NFPM 2.19.2](https://github.com/goreleaser/nfpm)
+- [Swag CLI 1.8.8](https://github.com/swaggo/swag)
+- [NFPM 2.22.1](https://github.com/goreleaser/nfpm)
 - [FailLint 1.11.0](https://github.com/fatih/faillint)
 - [Revive 1.2.4](https://github.com/mgechev/revive)
 - [gofumpt 0.4.0](https://github.com/mvdan/gofumpt)

@@ -1,4 +1,4 @@
-FROM golang:1.19.2
+FROM golang:1.19.3
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -67,7 +67,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # Kept up to date from  https://github.com/nodejs/docker-node/blob/main/18/alpine3.16/Dockerfile
 #
 
-ENV NODE_VERSION 18.10.0
+ENV NODE_VERSION 19.1.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -114,7 +114,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 # NFPM
 #
 
-ENV NFPM_VERSION 2.19.2
+ENV NFPM_VERSION 2.22.1
 
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
@@ -134,7 +134,7 @@ RUN go install github.com/swaggo/swag/cmd/swag@latest
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.50.0
+ENV GOLANGCI_LINT_VERSION 1.50.1
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
@@ -142,7 +142,7 @@ RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/in
 # GoSec
 #
 
-ENV GOSEC_VERSION 2.13.1
+ENV GOSEC_VERSION 2.14.0
 
 RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
@@ -165,7 +165,7 @@ RUN go install mvdan.cc/gofumpt@latest
 # Install Node deps and settings
 #
 ENV YARN_VERSION 1.22.19
-ENV PRETTIER_VERSION 2.7.1
+ENV PRETTIER_VERSION 2.8.0
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
