@@ -17,7 +17,7 @@ Included:
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
 - [Prettier 2.8.4](https://www.npmjs.com/package/prettier)
 - [PNPM 7.29.3](https://www.npmjs.com/package/pnpm)
-- [GolangCI Lint 1.50.1](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.51.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.14.0](https://github.com/securego/gosec)
 - [librdkafka 1.9.2](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.8.8](https://github.com/swaggo/swag)
