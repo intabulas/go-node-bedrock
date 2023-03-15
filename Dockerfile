@@ -1,4 +1,4 @@
-FROM golang:1.19.4
+FROM golang:1.20.2
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -67,7 +67,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # Kept up to date from  https://github.com/nodejs/docker-node/blob/main/18/alpine3.16/Dockerfile
 #
 
-ENV NODE_VERSION 19.3.0
+ENV NODE_VERSION 19.2.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -114,7 +114,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 # NFPM
 #
 
-ENV NFPM_VERSION 2.22.2
+ENV NFPM_VERSION 2.22.1
 
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
@@ -165,7 +165,7 @@ RUN go install mvdan.cc/gofumpt@latest
 # Install Node deps and settings
 #
 ENV YARN_VERSION 1.22.19
-ENV PRETTIER_VERSION 2.8.1
+ENV PRETTIER_VERSION 2.8.0
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
@@ -176,7 +176,7 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV PNPM_VERSION 7.18.2
+ENV PNPM_VERSION 7.13.1
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
