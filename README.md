@@ -15,7 +15,7 @@ Included:
 - [NodeJS 19.8.1](https://nodejs.org/en/download/current/) - includes NPM 9.5.1
 - [vlang 0.3.3](https://vlang.io/)
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
-- [Prettier 2.8.0](https://www.npmjs.com/package/prettier)
+- [Prettier 2.8.4](https://www.npmjs.com/package/prettier)
 - [PNPM 7.17.0](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.50.1](https://github.com/golangci/golangci-lint)
 - [Gosec 2.14.0](https://github.com/securego/gosec)
