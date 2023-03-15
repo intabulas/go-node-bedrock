@@ -4,8 +4,6 @@ This is a base image that has the things I need to do backend and frontend devel
 
 **UPDATE** I also use the official confluent go lib, which requires librdkafka. This image now has librdkafka installed for building
 
-**NOTE** I will be dropping Rush from this image as me, like the rest of the world, loves turborepo
-
 Aug 31st, 2022 - add vlang
 Mar 16th, 2022 - Dropped @microsoft/rush
 Feb 23rd, 2022 - pkger and packr were removed
