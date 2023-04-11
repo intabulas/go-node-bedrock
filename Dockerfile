@@ -51,7 +51,7 @@ RUN cd /opt/vlang \
 # librdkafka
 #
 
-ENV LIBRDKAFKA_VERSION 2.0.2
+ENV LIBRDKAFKA_VERSION 2.1.0
 
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
@@ -134,7 +134,7 @@ RUN go install github.com/swaggo/swag/cmd/swag@latest
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.51.2
+ENV GOLANGCI_LINT_VERSION 1.52.2
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
