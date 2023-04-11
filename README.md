@@ -15,8 +15,8 @@ Included:
 - [NodeJS 19.9.0](https://nodejs.org/en/download/current/) - includes NPM 9.6.3
 - [vlang 0.3.3](https://vlang.io/)
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
-- [Prettier 2.8.4](https://www.npmjs.com/package/prettier)
-- [PNPM 7.29.3](https://www.npmjs.com/package/pnpm)
+- [Prettier 2.8.7](https://www.npmjs.com/package/prettier)
+- [PNPM 8.2.0](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.51.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.15.0](https://github.com/securego/gosec)
 - [librdkafka 2.0.2](https://github.com/edenhill/librdkafka)
