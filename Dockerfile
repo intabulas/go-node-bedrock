@@ -51,7 +51,7 @@ RUN cd /opt/vlang \
 # librdkafka
 #
 
-ENV LIBRDKAFKA_VERSION 2.1.0
+ENV LIBRDKAFKA_VERSION 2.1.1
 
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \
