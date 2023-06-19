@@ -1,4 +1,4 @@
-FROM golang:1.20.4
+FROM golang:1.20.5
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -20,7 +20,6 @@ RUN apt-get update \
   clang \
   binutils \
   libc6-dev \
-  libpcre++-dev \
   libsasl2-dev \
   make \
   pkg-config \
@@ -30,7 +29,6 @@ RUN apt-get update \
   libzstd-dev \
   software-properties-common \
   apt-transport-https \
-  netcat \
   git \
   rpm \
   gettext-base \
