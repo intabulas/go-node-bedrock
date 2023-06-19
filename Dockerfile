@@ -112,7 +112,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 # NFPM
 #
 
-ENV NFPM_VERSION 2.28.0
+ENV NFPM_VERSION 2.30.1
 
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
