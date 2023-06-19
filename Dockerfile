@@ -132,7 +132,7 @@ RUN go install github.com/swaggo/swag/cmd/swag@latest
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.52.2
+ENV GOLANGCI_LINT_VERSION 1.53.3
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
