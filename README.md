@@ -15,8 +15,8 @@ Included:
 - [NodeJS 20.4.0](https://nodejs.org/en/download/current/) - includes NPM 9.7.2
 - [vlang 0.4.x](https://vlang.io/)
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
-- [Prettier 2.8.8](https://www.npmjs.com/package/prettier)
-- [PNPM 8.6.3](https://www.npmjs.com/package/pnpm)
+- [Prettier 3.0.0](https://www.npmjs.com/package/prettier)
+- [PNPM 8.6.7](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.53.3](https://github.com/golangci/golangci-lint)
 - [Gosec 2.16.0](https://github.com/securego/gosec)
 - [librdkafka 2.1.1](https://github.com/edenhill/librdkafka)
