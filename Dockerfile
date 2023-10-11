@@ -1,4 +1,4 @@
-FROM golang:1.20.5
+FROM golang:1.21.3
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -34,15 +34,6 @@ RUN apt-get update \
   gettext-base \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-#
-# VLANG
-#
-RUN git clone https://github.com/vlang/v/ /opt/vlang
-RUN cd /opt/vlang \
-  && make \
-  && ln -s /opt/vlang/v /usr/local/bin/v \
-  && cd /
 
 
 #
