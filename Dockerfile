@@ -165,7 +165,7 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV PNPM_VERSION 8.6.7
+ENV PNPM_VERSION 8.9.0
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
