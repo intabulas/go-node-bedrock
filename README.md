@@ -19,7 +19,7 @@ Included:
 - [PNPM 8.6.7](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.53.3](https://github.com/golangci/golangci-lint)
 - [Gosec 2.16.0](https://github.com/securego/gosec)
-- [librdkafka 2.1.1](https://github.com/edenhill/librdkafka)
+- [librdkafka 2.2.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.8.10](https://github.com/swaggo/swag)
 - [NFPM 2.30.1](https://github.com/goreleaser/nfpm)
 - [FailLint 1.11.0](https://github.com/fatih/faillint)
