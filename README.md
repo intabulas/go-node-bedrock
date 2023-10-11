@@ -18,7 +18,7 @@ Included:
 - [Prettier 3.0.0](https://www.npmjs.com/package/prettier)
 - [PNPM 8.6.7](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.54.2](https://github.com/golangci/golangci-lint)
-- [Gosec 2.16.0](https://github.com/securego/gosec)
+- [Gosec 2.18.0](https://github.com/securego/gosec)
 - [librdkafka 2.2.0](https://github.com/edenhill/librdkafka)
 - [Swag CLI 1.16.2](https://github.com/swaggo/swag)
 - [NFPM 2.33.1](https://github.com/goreleaser/nfpm)
