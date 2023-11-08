@@ -16,7 +16,7 @@ Included:
 - [NodeJS 21.1.0](https://nodejs.org/en/download/current/) - includes NPM 10.2.0
 - [Yarn 1.22.19](https://www.npmjs.com/package/yarn)
 - [Prettier 3.0.3](https://www.npmjs.com/package/prettier)
-- [PNPM 8.9.0](https://www.npmjs.com/package/pnpm)
+- [PNPM 8.10.2](https://www.npmjs.com/package/pnpm)
 - [GolangCI Lint 1.55.2](https://github.com/golangci/golangci-lint)
 - [Gosec 2.18.2](https://github.com/securego/gosec)
 - [librdkafka 2.3.0](https://github.com/edenhill/librdkafka)
