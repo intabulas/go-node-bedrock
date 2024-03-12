@@ -18,7 +18,7 @@ Included:
 - [NFPM 2.35.3](https://github.com/goreleaser/nfpm)
 - [Swag CLI 1.16.3](https://github.com/swaggo/swag)
 - [GolangCI Lint 1.56.2](https://github.com/golangci/golangci-lint)
-- [Gosec 2.18.2](https://github.com/securego/gosec)
+- [Gosec 2.19.0](https://github.com/securego/gosec)
 - [Revive 1.3.6](https://github.com/mgechev/revive)
 - [FailLint 1.11.0](https://github.com/fatih/faillint)
 - [gofumpt 0.5.0](https://github.com/mvdan/gofumpt)
