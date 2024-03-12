@@ -22,6 +22,6 @@ Included:
 - [Revive 1.3.7](https://github.com/mgechev/revive)
 - [FailLint 1.11.0](https://github.com/fatih/faillint)
 - [gofumpt 0.6.0](https://github.com/mvdan/gofumpt)
-- [Yarn 1.22.21](https://www.npmjs.com/package/yarn)
+- [Yarn 1.22.22](https://www.npmjs.com/package/yarn)
 - [Prettier 3.2.4](https://www.npmjs.com/package/prettier)
 - [PNPM 8.14.1](https://www.npmjs.com/package/pnpm)

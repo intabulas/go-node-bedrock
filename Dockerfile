@@ -153,7 +153,7 @@ RUN go install mvdan.cc/gofumpt@latest
 #
 # Install Node deps and settings
 #
-ENV YARN_VERSION 1.22.21
+ENV YARN_VERSION 1.22.22
 ENV PRETTIER_VERSION 3.2.4
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
