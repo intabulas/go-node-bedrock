@@ -4,15 +4,15 @@ This is a base image that has the things I need to do backend and frontend devel
 
 **UPDATE** I also use the official confluent go lib, which requires librdkafka. This image now has librdkafka installed for building
 
-Oct 11th, 2024 - Dropping vlang
-Aug 31st, 2022 - add vlang
-Mar 16th, 2022 - Dropped @microsoft/rush
-Feb 23rd, 2022 - pkger and packr were removed
-Feb 4th, 2022 - Lerna has been removed
+- Oct 11th, 2024 - Dropping vlang
+- Aug 31st, 2022 - add vlang
+- Mar 16th, 2022 - Dropped @microsoft/rush
+- Feb 23rd, 2022 - pkger and packr were removed
+- Feb 4th, 2022 - Lerna has been removed
 
 Included:
 
-- [Golang 1.21.6](https://golang.org/dl/)
+- [Golang 1.22.1](https://golang.org/dl/)
 - [NodeJS 21.6.0](https://nodejs.org/en/download/current/) - includes NPM 10.2.4
 - [Yarn 1.22.21](https://www.npmjs.com/package/yarn)
 - [Prettier 3.2.4](https://www.npmjs.com/package/prettier)
