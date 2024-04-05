@@ -24,4 +24,4 @@ Included:
 - [gofumpt 0.6.0](https://github.com/mvdan/gofumpt)
 - [Yarn 1.22.22](https://www.npmjs.com/package/yarn)
 - [Prettier 3.2.5](https://www.npmjs.com/package/prettier)
-- [PNPM 8.15.4](https://www.npmjs.com/package/pnpm)
+- [PNPM 8.15.6](https://www.npmjs.com/package/pnpm)
