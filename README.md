@@ -17,7 +17,7 @@ Included:
 - [NodeJS 22.1.0](https://nodejs.org/en/download/current/) - includes NPM 10.7.0
 - [NFPM 2.36.1](https://github.com/goreleaser/nfpm)
 - [Swag CLI 1.16.3](https://github.com/swaggo/swag)
-- [GolangCI Lint 1.57.2](https://github.com/golangci/golangci-lint)
+- [GolangCI Lint 1.58.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.19.0](https://github.com/securego/gosec)
 - [Revive 1.3.7](https://github.com/mgechev/revive)
 - [FailLint 1.12.0](https://github.com/fatih/faillint)
