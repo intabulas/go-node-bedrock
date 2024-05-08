@@ -20,7 +20,7 @@ Included:
 - [GolangCI Lint 1.58.0](https://github.com/golangci/golangci-lint)
 - [Gosec 2.19.0](https://github.com/securego/gosec)
 - [Revive 1.3.7](https://github.com/mgechev/revive)
-- [FailLint 1.12.0](https://github.com/fatih/faillint)
+- [FailLint 1.13.0](https://github.com/fatih/faillint)
 - [gofumpt 0.6.0](https://github.com/mvdan/gofumpt)
 - [Yarn 1.22.22](https://www.npmjs.com/package/yarn)
 - [Prettier 3.2.5](https://www.npmjs.com/package/prettier)
