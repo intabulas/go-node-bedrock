@@ -14,7 +14,7 @@ Included:
 
 - [Golang 1.22.3](https://golang.org/dl/)
 - [librdkafka 2.4.0](https://github.com/edenhill/librdkafka)
-- [NodeJS 21.7.2](https://nodejs.org/en/download/current/) - includes NPM 10.5.0
+- [NodeJS 22.1.0](https://nodejs.org/en/download/current/) - includes NPM 10.7.0
 - [NFPM 2.36.1](https://github.com/goreleaser/nfpm)
 - [Swag CLI 1.16.3](https://github.com/swaggo/swag)
 - [GolangCI Lint 1.57.2](https://github.com/golangci/golangci-lint)
