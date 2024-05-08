@@ -40,7 +40,7 @@ RUN apt-get update \
 # librdkafka
 #
 
-ENV LIBRDKAFKA_VERSION 2.3.0
+ENV LIBRDKAFKA_VERSION 2.4.0
 
 RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar.gz \
   && tar -xvf v$LIBRDKAFKA_VERSION.tar.gz  \

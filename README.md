@@ -13,7 +13,7 @@ This is a base image that has the things I need to do backend and frontend devel
 Included:
 
 - [Golang 1.22.3](https://golang.org/dl/)
-- [librdkafka 2.3.0](https://github.com/edenhill/librdkafka)
+- [librdkafka 2.4.0](https://github.com/edenhill/librdkafka)
 - [NodeJS 21.7.2](https://nodejs.org/en/download/current/) - includes NPM 10.5.0
 - [NFPM 2.36.1](https://github.com/goreleaser/nfpm)
 - [Swag CLI 1.16.3](https://github.com/swaggo/swag)
