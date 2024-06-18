@@ -1,4 +1,4 @@
-FROM golang:1.22.3
+FROM golang:1.22.4
 
 LABEL name="Go Node Bedrock"
 LABEL maintainer="mlussier@gmail.com"
@@ -56,7 +56,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # Kept up to date from  https://github.com/nodejs/docker-node/blob/main/18/alpine3.16/Dockerfile
 #
 
-ENV NODE_VERSION 22.1.0
+ENV NODE_VERSION 22.3.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
