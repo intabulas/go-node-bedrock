@@ -154,7 +154,7 @@ RUN go install mvdan.cc/gofumpt@latest
 # Install Node deps and settings
 #
 ENV YARN_VERSION 1.22.22
-ENV PRETTIER_VERSION 3.2.5
+ENV PRETTIER_VERSION 3.3.2
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
   #
@@ -165,7 +165,7 @@ RUN  /usr/local/bin/npm set progress=false \
 #
 # Install PNPM and RUSH. These change ALOT so keeping them isolated so the download is small
 #
-ENV PNPM_VERSION 8.15.6
+ENV PNPM_VERSION 9.4.0
 
 RUN  /usr/local/bin/npm set progress=false \
   && /usr/local/bin/npm config set loglevel warn \
