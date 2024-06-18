@@ -123,7 +123,7 @@ RUN go install github.com/swaggo/swag/cmd/swag@latest
 # GolangCI Lint
 #
 
-ENV GOLANGCI_LINT_VERSION 1.58.0
+ENV GOLANGCI_LINT_VERSION 1.59.0
 
 RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $(go env GOPATH)/bin v${GOLANGCI_LINT_VERSION}
 
@@ -131,7 +131,7 @@ RUN curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/in
 # GoSec
 #
 
-ENV GOSEC_VERSION 2.19.0
+ENV GOSEC_VERSION 2.20.0
 
 RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin v${GOSEC_VERSION}
 
