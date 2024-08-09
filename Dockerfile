@@ -118,7 +118,7 @@ ENV GO111MODULE on
 #
 # Swag CLI
 #
-RUN go install github.com/swaggo/swag/cmd/swag@latest
+RUN go install github.com/swaggo/swag/cmd/swag@v1.16.3
 #
 # GolangCI Lint
 #
@@ -138,7 +138,7 @@ RUN curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh
 #
 # Revive
 #
-RUN go install github.com/mgechev/revive@latest
+RUN go install github.com/mgechev/revive@v1.3.9
 
 #
 # FailLint https://github.com/fatih/faillint
