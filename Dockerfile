@@ -56,7 +56,7 @@ RUN wget https://github.com/edenhill/librdkafka/archive/v$LIBRDKAFKA_VERSION.tar
 # Kept up to date from  https://github.com/nodejs/docker-node/blob/main/18/alpine3.16/Dockerfile
 #
 
-ENV NODE_VERSION 22.3.0
+ENV NODE_VERSION 22.6.0
 
 ENV NPM_CONFIG_LOGLEVEL info
 RUN set -ex \
@@ -103,7 +103,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
 # NFPM
 #
 
-ENV NFPM_VERSION 2.37.1
+ENV NFPM_VERSION 2.38.0
 
 RUN curl -fsSLO --compressed "https://github.com/goreleaser/nfpm/releases/download/v${NFPM_VERSION}/nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" \
   && tar -xzvf "nfpm_${NFPM_VERSION}_Linux_x86_64.tar.gz" -C /usr/local/bin  --no-same-owner \
