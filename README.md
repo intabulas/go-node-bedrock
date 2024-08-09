@@ -12,7 +12,7 @@ This is a base image that has the things I need to do backend and frontend devel
 
 Included:
 
-- [Golang 1.22.4](https://golang.org/dl/)
+- [Golang 1.22.6](https://golang.org/dl/)
 - [librdkafka 2.4.0](https://github.com/edenhill/librdkafka)
 - [NodeJS 22.3.0](https://nodejs.org/en/download/current/) - includes NPM 10.8.1
 - [NFPM 2.37.1](https://github.com/goreleaser/nfpm)
