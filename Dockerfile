@@ -143,11 +143,11 @@ RUN go install github.com/mgechev/revive@v1.3.9
 #
 # FailLint https://github.com/fatih/faillint
 #
-RUN go install github.com/fatih/faillint@latest
+RUN go install github.com/fatih/faillint@v1.13.0
 #
 # gofumpt https://github.com/mvdan/gofumpt
 #
-RUN go install mvdan.cc/gofumpt@latest
+RUN go install mvdan.cc/gofumpt@v0.6.0
 
 
 #
